@@ -1,0 +1,17 @@
+def bubble(list):
+  items = len(list)
+  swapped = False
+  for i in range(items-1):
+    for j in range(0,items   -i-1):
+      if list[j] > list[j+1]:
+        swapped = True
+        list[j],list[j+1] = list[j+1],list[j]
+      if list[j] < list[j+1]:
+        swapped = True
+      if not swapped:
+        return
+list = [34, 64, 66, 41, 176, 400, 7, 99]
+bubble(list)
+print("The sorted list is")
+for i in range(len(list)):
+  print("% d" % list[i], end=" ")  
