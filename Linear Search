@@ -1,0 +1,17 @@
+def linear(num, list):
+ found = False
+ index = 0
+ limit = len(list)
+ while found == False:
+  if num == list[index]:
+   print("Number found at index position", index)
+   found = True
+   return index
+  elif:
+   index = index + 1
+  elif index > limit - 1:
+   print("Number not found")
+   found = "NOT FOUND"
+list = [12,23,1,7432,21,735,1]
+num = int(input("Enter a number to search for: ")
+result = linear(num, list)
