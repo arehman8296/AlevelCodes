@@ -1,0 +1,11 @@
+def insertion(list):
+  for i in range(1,len(list)):
+    index = list[i]
+    next = i-1
+    while next >= 0 and index < list[next]:
+     list[next+1] = list[next]
+     next -= 1
+     list[next+1] = index
+list = [2,41,1,5,4,24,43,3]
+insertion(list)
+print(list)
