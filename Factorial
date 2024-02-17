@@ -1,0 +1,7 @@
+factor = int(input("Enter: "))
+multiply = factor -1
+while multiply > 0:
+  sum = factor * multiply
+  multiply = multiply -1
+  factor = sum
+  if multiply == 0: print(sum)
